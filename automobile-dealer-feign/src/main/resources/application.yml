@@ -1,0 +1,19 @@
+spring:
+  main:
+    web-application-type: none
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connect-timeout: 5000
+            read-timeout: 5000
+            logger-level: basic
+            
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+    service-url:
+      defaultZone : http://localhost:8761/eureka
+      
